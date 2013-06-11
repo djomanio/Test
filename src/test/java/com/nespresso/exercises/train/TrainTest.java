@@ -1,13 +1,11 @@
 package com.nespresso.exercises.train;
 
-
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-public class TrainTest {
+import org.junit.Test;
 
+public class TrainTest {
 
     @Test
     public void passengerTrain() {
@@ -52,11 +50,11 @@ public class TrainTest {
     @Test
     public void mixedTrain() {
         Train train = new Train("HPCPC");
-        assertEquals("<HHHH::IOOOO|::|____|::|OOOO|::|____|", train.print());
+        assertEquals("<HHHH::|OOOO|::|____|::|OOOO|::|____|", train.print());
         train.fill();
-        assertEquals("<HHHH::IOOOO|::|^^^^|::|OOOO|::|____|", train.print());
+        assertEquals("<HHHH::|OOOO|::|^^^^|::|OOOO|::|____|", train.print());
         train.fill();
-        assertEquals("<HHHH::IOOOO|::|^^^^|::|OOOO|::|^^^^|", train.print());
+        assertEquals("<HHHH::|OOOO|::|^^^^|::|OOOO|::|^^^^|", train.print());
         assertFalse(train.fill());
     }
 }
