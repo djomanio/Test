@@ -2,11 +2,7 @@ package com.nespresso.exercises.train;
 
 public class Train {
 
-	public Train(String name) {
-		throw new UnsupportedOperationException("Still to be implemented");
-	}
-
-	public String printTrain(String name){
+	public Train(String structure) {
 		throw new UnsupportedOperationException("Still to be implemented");
 	}
 
