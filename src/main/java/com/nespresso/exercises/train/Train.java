@@ -1,24 +1,28 @@
 package com.nespresso.exercises.train;
 
-public class Train {
+import com.nespresso.exercises.chainwagon.ChainWagonFactory;
 
+public class Train {
+	private IChainWagon iChainWagon = null;
+	
+	
 	public Train(String structure) {
-		throw new UnsupportedOperationException("Still to be implemented");
+		iChainWagon = ChainWagonFactory.newChainWagon(structure);
 	}
 
 	public String print(){
-		throw new UnsupportedOperationException("Still to be implemented");
+		return iChainWagon.print();
 	}
 
 	public void detachEnd(){
-		throw new UnsupportedOperationException("Still to be implemented");
+		iChainWagon.detachEnd();
 	}
 
 	public void detachHead(){
-		throw new UnsupportedOperationException("Still to be implemented");
+		iChainWagon.detachHead();
 	}
 
 	public boolean fill(){
-        throw new UnsupportedOperationException("Still to be implemented");
+        return iChainWagon.fill();
 	}
 }

@@ -5,6 +5,7 @@ import static org.junit.Assert.assertFalse;
 
 import org.junit.Test;
 
+
 public class TrainTest {
 
     @Test
@@ -57,4 +58,5 @@ public class TrainTest {
         assertEquals("<HHHH::|OOOO|::|^^^^|::|OOOO|::|^^^^|", train.print());
         assertFalse(train.fill());
     }
+    
 }
